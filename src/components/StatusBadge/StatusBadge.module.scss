@@ -1,0 +1,31 @@
+@import "../../styles/variables.scss";
+
+.StatusBadge {
+  $status-pending: #ffd700;
+  $status-processing: #87ceeb;
+  $status-shipped: #90ee90;
+  $status-delivered: #98fb98;
+  $status-cancelled: #ff6961;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &--pending {
+    background-color: $status-pending;
+  }
+  &--processing {
+    background-color: $status-processing;
+  }
+  &--shipped {
+    background-color: $status-shipped;
+  }
+  &--delivered {
+    background-color: $status-delivered;
+  }
+  &--cancelled {
+    background-color: $status-cancelled;
+    color: $bg-card;
+  }
+}

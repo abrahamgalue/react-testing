@@ -1,0 +1,48 @@
+@import "../../styles/variables.scss";
+
+.orders {
+  background: linear-gradient(
+    135deg,
+    rgba($primary-color, 0.1),
+    rgba($secondary-color, 0.1)
+  );
+  color: $text-color;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    min-height: 100vh;
+  }
+
+
+  &__title {
+    color: $primary-color-dark;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+// Media query for responsive design
+@media (max-width: 1200px) {
+  .orders {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .orders {
+    &__list {
+      grid-template-columns: 1fr;
+    }
+  }
+}

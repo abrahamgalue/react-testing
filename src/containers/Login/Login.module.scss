@@ -1,0 +1,123 @@
+@import "../../styles/_variables.scss";
+
+.Login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    rgba($primary-color, 0.1),
+    rgba($secondary-color, 0.1)
+  );
+  padding: 1rem;
+  box-sizing: border-box;
+
+  &__container {
+    background-color: $white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba($primary-color, 0.2);
+    width: 100%;
+    max-width: 350px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba($primary-color, 0.3);
+    }
+  }
+
+  &__title {
+    color: $primary-color;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 0.75rem 0;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-bottom: 2px solid rgba($primary-color, 0.3);
+    background-color: transparent;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    box-sizing: border-box;
+
+    &:focus {
+      outline: none;
+      border-bottom-color: $primary-color;
+      box-shadow: 0 5px 10px rgba($primary-color, 0.1);
+    }
+
+    &::placeholder {
+      color: rgba($primary-color, 0.5);
+    }
+  }
+
+  &__passwordContainer {
+    position: relative;
+    margin-bottom: 1.5rem;
+    width: 100%;
+
+    .Login__input {
+      padding-right: 2.5rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &__togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 2rem;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: $primary-color;
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      color: $primary-color-dark;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__errorMsg {
+    color: $secondary-color;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    animation: shake 0.5s ease-in-out;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-5px);
+  }
+  40%,
+  80% {
+    transform: translateX(5px);
+  }
+}

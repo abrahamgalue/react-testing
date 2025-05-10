@@ -1,0 +1,113 @@
+@import "../../styles/variables.scss";
+
+.OrderItem {
+  background-color: $bg-card;
+  border-radius: 8px;
+  box-shadow: $card-shadow;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border: 1px solid $gray;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+
+  &__header {
+    background-color: $primary-color-light;
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $gray;
+  }
+
+  &__id {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: $primary-color-dark;
+  }
+
+  &__date {
+    font-size: 0.75rem;
+    color: $text-color-light;
+  }
+
+  &__customer {
+    padding: 0.5rem 0.75rem;
+    background-color: $bg-card;
+    border-bottom: 1px solid $gray;
+  }
+
+  &__customerName {
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-bottom: 0.1rem;
+  }
+
+  &__customerEmail {
+    font-size: 0.75rem;
+    color: $text-color-light;
+  }
+
+  &__products {
+    padding: 0.5rem 0.75rem;
+  }
+
+  &__productsTitle {
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
+    color: $primary-color-dark;
+  }
+
+  &__productsList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__productsItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 0;
+    border-bottom: 1px solid $gray;
+    font-size: 0.75rem;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0.75rem;
+    background-color: $gray-light;
+    border-top: 1px solid $gray;
+  }
+
+  &__payment,
+  &__total {
+    text-align: center;
+  }
+
+  &__paymentLabel,
+  &__totalLabel {
+    font-size: 0.7rem;
+    color: $text-color-light;
+    margin-bottom: 0.1rem;
+  }
+
+  &__paymentMethod,
+  &__totalAmount {
+    font-weight: bold;
+    color: $primary-color-dark;
+    font-size: 0.8rem;
+  }
+
+  &__totalAmount {
+    font-size: 0.9rem;
+  }
+}

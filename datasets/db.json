@@ -1,0 +1,254 @@
+{
+  "orders": [
+    {
+      "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+      "customer": {
+        "id": "60d07f61-99bf-4b90-955b-5d3a7c9bb3d4",
+        "name": "John Doe",
+        "email": "john.doe@example.com"
+      },
+      "products": [
+        {
+          "id": "7567ec4b-b10c-48c5-9345-fc73c48a80a2",
+          "name": "Laptop",
+          "price": 999.99,
+          "quantity": 1
+        },
+        {
+          "id": "7567ec4b-b10c-48c5-9345-fc73c48a80a3",
+          "name": "Mouse",
+          "price": 29.99,
+          "quantity": 1
+        }
+      ],
+      "total": 1029.98,
+      "status": "delivered",
+      "orderDate": "2023-10-01T10:00:00Z",
+      "shippingAddress": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "zipCode": "12345",
+        "country": "USA"
+      },
+      "paymentMethod": "credit_card"
+    },
+    {
+      "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+      "customer": {
+        "id": "99bd3a64-13f7-4b37-9706-e71f8d0d9cf4",
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com"
+      },
+      "products": [
+        {
+          "id": "404daf2a-9b97-41f3-b04d-e3e5a7dc8cb4",
+          "name": "Smartphone",
+          "price": 699.99,
+          "quantity": 1
+        },
+        {
+          "id": "6d62d909-f957-430e-8689-b5129c0bb75e",
+          "name": "Phone Case",
+          "price": 19.99,
+          "quantity": 1
+        },
+        {
+          "id": "3c7eb6bc-a146-4523-a442-f6c676f5a5f7",
+          "name": "Screen Protector",
+          "price": 9.99,
+          "quantity": 2
+        }
+      ],
+      "total": 739.96,
+      "status": "processing",
+      "orderDate": "2023-10-05T14:30:00Z",
+      "shippingAddress": {
+        "street": "456 Elm St",
+        "city": "Other City",
+        "state": "NY",
+        "zipCode": "67890",
+        "country": "USA"
+      },
+      "paymentMethod": "paypal"
+    },
+    {
+      "id": "8ec7f60d-1f8e-494d-abb8-56d09ab180d0",
+      "customer": {
+        "id": "7d9e35be-e87b-4a98-b1ba-8d12e3e20a0c",
+        "name": "Alice Johnson",
+        "email": "alice.johnson@example.com"
+      },
+      "products": [
+        {
+          "id": "9ce0b1a8-7b22-4f2f-b8cb-fc9c5b548474",
+          "name": "Headphones",
+          "price": 149.99,
+          "quantity": 1
+        },
+        {
+          "id": "bba23f80-2a09-4423-8b9c-3d56b9a8c5e1",
+          "name": "Music Subscription",
+          "price": 9.99,
+          "quantity": 12
+        }
+      ],
+      "total": 269.87,
+      "status": "shipped",
+      "orderDate": "2023-10-10T09:15:00Z",
+      "shippingAddress": {
+        "street": "789 Oak Rd",
+        "city": "Somewhere",
+        "state": "TX",
+        "zipCode": "54321",
+        "country": "USA"
+      },
+      "paymentMethod": "credit_card"
+    },
+    {
+      "id": "f3a5c700-7496-44c4-823d-7e638b8f7c5c",
+      "customer": {
+        "id": "e2d4f8b1-5831-41fd-9419-17b2d9a9b0bf",
+        "name": "Bob Wilson",
+        "email": "bob.wilson@example.com"
+      },
+      "products": [
+        {
+          "id": "1f58d394-0067-4202-a0ac-4037a46137d6",
+          "name": "4K TV",
+          "price": 1299.99,
+          "quantity": 1
+        },
+        {
+          "id": "71a7bc49-4470-4640-9c9a-7d6a9f2f8cef",
+          "name": "Soundbar",
+          "price": 199.99,
+          "quantity": 1
+        },
+        {
+          "id": "5d5a0414-53a9-4b38-9d8a-7f79c83b8d6e",
+          "name": "HDMI Cable",
+          "price": 19.99,
+          "quantity": 2
+        }
+      ],
+      "total": 1539.96,
+      "status": "pending",
+      "orderDate": "2023-10-15T16:45:00Z",
+      "shippingAddress": {
+        "street": "101 Pine Lane",
+        "city": "Elsewhere",
+        "state": "FL",
+        "zipCode": "34567",
+        "country": "USA"
+      },
+      "paymentMethod": "bank_transfer"
+    },
+    {
+      "id": "c68d9cb9-8e9a-4f24-9d06-2901f698a8b8",
+      "customer": {
+        "id": "9a9f2b3f-7deb-48c3-b9f2-7e38b9d54d6a",
+        "name": "Carol Martinez",
+        "email": "carol.martinez@example.com"
+      },
+      "products": [
+        {
+          "id": "9d1a0f9a-5b7e-4b6a-8f0a-68f0b42d7373",
+          "name": "Fitness Tracker",
+          "price": 89.99,
+          "quantity": 1
+        },
+        {
+          "id": "4d4c5c3b-7bec-4d8f-8d3f-3cbeb3986642",
+          "name": "Yoga Mat",
+          "price": 29.99,
+          "quantity": 1
+        },
+        {
+          "id": "3c0234d8-d7b3-48a1-97a2-e31bf45db8a6",
+          "name": "Water Bottle",
+          "price": 14.99,
+          "quantity": 1
+        }
+      ],
+      "total": 134.97,
+      "status": "processing",
+      "orderDate": "2023-10-20T11:30:00Z",
+      "shippingAddress": {
+        "street": "222 Maple Ave",
+        "city": "Smallville",
+        "state": "OH",
+        "zipCode": "87654",
+        "country": "USA"
+      },
+      "paymentMethod": "credit_card"
+    }
+  ],
+  "auth": [
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440000",
+      "username": "superadmin",
+      "email": "superadmin@example.com",
+      "password": "superadmin123!",
+      "role": "superadmin",
+      "firstName": "John",
+      "lastName": "Doe",
+      "lastLogin": "2023-10-12T08:30:00Z",
+      "createdAt": "2023-01-01T00:00:00Z",
+      "status": "active"
+    },
+    {
+      "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+      "username": "visualizer1",
+      "email": "visualizer1@example.com",
+      "password": "vis1pass456@",
+      "role": "visualizer",
+      "firstName": "Alice",
+      "lastName": "Smith",
+      "lastLogin": "2023-10-11T14:45:00Z",
+      "createdAt": "2023-02-15T00:00:00Z",
+      "status": "active"
+    },
+    {
+      "id": "6ba7b811-9dad-11d1-80b4-00c04fd430c8",
+      "username": "visualizer2",
+      "email": "visualizer2@example.com",
+      "password": "vis2pass789#",
+      "role": "visualizer",
+      "firstName": "Bob",
+      "lastName": "Johnson",
+      "lastLogin": "2023-10-10T09:15:00Z",
+      "createdAt": "2023-03-01T00:00:00Z",
+      "status": "active"
+    },
+    {
+      "id": "6ba7b812-9dad-11d1-80b4-00c04fd430c8",
+      "username": "visualizer3",
+      "email": "visualizer3@example.com",
+      "password": "vis3pass101$",
+      "role": "visualizer",
+      "firstName": "Carol",
+      "lastName": "Williams",
+      "lastLogin": "2023-10-09T16:20:00Z",
+      "createdAt": "2023-04-10T00:00:00Z",
+      "status": "inactive"
+    },
+    {
+      "id": "6ba7b813-9dad-11d1-80b4-00c04fd430c8",
+      "username": "visualizer4",
+      "email": "visualizer4@example.com",
+      "password": "vis4pass202%",
+      "role": "visualizer",
+      "firstName": "David",
+      "lastName": "Brown",
+      "lastLogin": "2023-10-08T11:30:00Z",
+      "createdAt": "2023-05-20T00:00:00Z",
+      "status": "active"
+    },
+    {
+      "email": "awdadw",
+      "password": "dawwda",
+      "id": "6IbbeXN"
+    }
+  ]
+}
