@@ -65,7 +65,7 @@ export const Login: React.FC = () => {
   return (
     <div className={classes.Login}>
       <section className={classes.Login__container}>
-        <h1 className={classes.Login__title}>Platzi order</h1>
+        <h1 className={classes.Login__title}>App order</h1>
         <input
           type="text"
           name="username"
