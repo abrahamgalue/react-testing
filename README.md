@@ -63,7 +63,7 @@ Through this project, students will gain hands-on experience in writing effectiv
 
 ## Prerequisites
 
-- Node.js (version 20.10.0 or higher)
+- Node.js (version 20.15.1 or higher)
 - npm or yarn
 
 ## Installation
