@@ -68,4 +68,30 @@ describe('<Login />', () => {
       expect(mockNavigate).toHaveBeenCalledWith('/orders')
     })
   })
+
+  test('debería mostrar/ocultar la contraseña', async () => {
+    handleLogin()
+
+    const buttonShow = screen.getByRole('button', { name: 'show' })
+    expect(buttonShow).toBeInTheDocument()
+
+    const passwordInput = screen.getByPlaceholderText('Password')
+    expect(passwordInput).toHaveAttribute('type', 'password')
+
+    await act(async () => {
+      fireEvent.click(buttonShow)
+    })
+
+    expect(await screen.findByText('hide')).toBeVisible()
+    expect(passwordInput).toHaveAttribute('type', 'text')
+
+    const buttonHide = screen.getByRole('button', { name: 'hide' })
+
+    await act(async () => {
+      fireEvent.click(buttonHide)
+    })
+
+    expect(await screen.findByText('show')).toBeVisible()
+    expect(passwordInput).toHaveAttribute('type', 'password')
+  })
 })
