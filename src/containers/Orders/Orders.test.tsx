@@ -4,6 +4,7 @@ import { MemoryRouter } from 'react-router-dom'
 import { SessionProvider, useSession } from '../../context/AuthContext'
 import { render, screen, waitFor } from '@testing-library/react'
 import { getOrders } from '../../services/getOrders'
+import { getSummaryOrders } from '../../utils/sumamry'
 
 vi.mock('../../services/getOrders', () => ({
   getOrders: vi.fn(),
@@ -78,6 +79,31 @@ describe('<Orders />', () => {
     await waitFor(() => {
       const orders = screen.getAllByRole('heading', { level: 3 })
       expect(orders).toHaveLength(mockOrders.length)
+    })
+  })
+
+  test('debería mostrar sección para superadmins', async () => {
+    mockGetOrders.mockResolvedValue(mockOrders)
+    handleRenderOrders('superadmin')
+
+    const { totalOrders, averageOrderValue, totalValue, ordersByStatus } =
+      getSummaryOrders(mockOrders)
+
+    await waitFor(() => {
+      expect(screen.getByTitle('Total Orders')).toHaveTextContent(
+        totalOrders.toString()
+      )
+      expect(screen.getByTitle('Average Order Value')).toHaveTextContent(
+        `$${averageOrderValue}`
+      )
+      expect(screen.getByTitle('Total Value')).toHaveTextContent(
+        `$${totalValue}`
+      )
+
+      Object.entries(ordersByStatus).forEach(([status, count]) => {
+        const title = status.toUpperCase()
+        expect(screen.getByTitle(title)).toHaveTextContent(count.toString())
+      })
     })
   })
 })
