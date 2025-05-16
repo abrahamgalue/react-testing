@@ -81,4 +81,22 @@ describe('useOrders', () => {
     expect(result.current.error).toBe(null)
     expect(result.current.loading).toBe(false)
   })
+
+  test('debería obtener un error cuando no encuentra las orders', async () => {
+    const errorMessage = 'Failed to fetch orders. Please try again later.'
+    mockGetOrders.mockRejectedValue(new Error(errorMessage))
+    mockUseSession.mockReturnValue({ user: { id: 1 } })
+
+    const { result, waitForNextUpdate } = renderHook(() => useOrders())
+
+    expect(result.current.error).toBe(null)
+    expect(result.current.orders).toStrictEqual([])
+    expect(result.current.loading).toBe(true)
+
+    await waitForNextUpdate()
+
+    expect(result.current.error).toBe(errorMessage)
+    expect(result.current.orders).toStrictEqual([])
+    expect(result.current.loading).toBe(false)
+  })
 })
