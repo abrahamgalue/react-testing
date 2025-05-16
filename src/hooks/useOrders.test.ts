@@ -99,4 +99,12 @@ describe('useOrders', () => {
     expect(result.current.orders).toStrictEqual([])
     expect(result.current.loading).toBe(false)
   })
+
+  test('debería redirigir a / cuando no hay un user', async () => {
+    mockUseSession.mockReturnValue({ user: null })
+
+    renderHook(() => useOrders())
+
+    expect(mockNavigate).toHaveBeenCalledWith('/')
+  })
 })
