@@ -1,3 +1,103 @@
+<div align='center'>
+
+# 🧪 Vitest: React Testing Library course
+
+</div>
+
+### Curso completado para aprender testing en React con Vitest y Testing Library.
+
+![vista-previa](./public/preview/01-test-preview.jpg)
+
+![vista-previa](./public/preview/02-test-preview.jpg)
+
+![vista-previa](./public/preview/03-test-preview.jpg)
+
+## 🚀 Descripción
+
+Este repositorio contiene todo el código del curso que he completado para aprender testing en React con Vitest y Testing Library.
+
+Haciendo unit tests, mocks de funciones y módulos, spy, msw y muchas cosas más. 
+
+## ⚡ Comenzar
+
+### Prerrequisitos
+
+1. Git.
+2. Node.js: cualquier versión a partir de la 18 o superior.
+3. Bun: opcional, pero recomendado.
+
+## 🔧 Instalación
+
+### Usando npm
+
+1. **Clona el repositorio:**
+
+   ```bash
+   git clone https://github.com/abrahamgalue/react-testing.git
+   cd react-testing
+   ```
+
+2. **Instala las dependencias:**
+
+   ```bash
+   npm install
+   ```
+
+### Ejecución de tests
+
+Puedes acceder a las diferentes carpetas y ejecutar los tests
+
+1. **Ejecuta los tests:**
+
+   ```bash
+   npm run test
+   ```
+
+### Usando bun
+
+1. **Clona el repositorio:**
+
+   ```bash
+   git clone https://github.com/abrahamgalue/react-testing.git
+   cd react-testing
+   ```
+
+2. **Instala las dependencias:**
+
+   ```bash
+   bun install
+   ```
+
+### Ejecución de tests
+
+Puedes acceder a las diferentes carpetas y ejecutar los tests
+
+1. **Ejecuta los tests:**
+
+   ```bash
+   bun run test
+   ```
+
+   Te recomiendo revisar los archivos `.test.ts|x` de las diferentes carpetas para revisar los archivos que puedes usar para ejecutar los tests.
+
+## 🎭 Tecnologías
+
+- [**Vitest**](https://vitest.dev/) Como test runner.
+- [**happy-dom**](https://www.npmjs.com/package/happy-dom) Para simular el DOM.
+- [**@testing-library/react**](https://testing-library.com/docs/react-testing-library/intro/) Para pruebas de componentes de React.
+- [**@testing-library/react-hooks**](https://react-hooks-testing-library.com/) Para pruebas de hooks de React.
+- [**msw**](https://mswjs.io/) Para mockear peticiones HTTP.
+- [**Vite**](https://vite.dev/) Como bundler.
+
+
+## 📚 Documentación
+
+Esta es la aplicación base que he utilizado a lo largo del curso. Y a la cual le he aplicado los tests.
+
+👇 Aquí debajo tienes su documentación:
+
+<br/>
+
 # Task Management Project for React Testing Course
 
 ## Description
